@@ -1,2 +1,9 @@
 # Private-Compress
-The code is ready to release soon.
+
+Demo codes for the AAAI'19 submission *Private Model Compression via Knowledge Distillation*
+
+## Prerequisites
+
+1. Performance test
+
+2. Implementation on Android
