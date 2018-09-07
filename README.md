@@ -2,6 +2,8 @@
 
 Demo codes for the AAAI'19 submission *Private Model Compression via Knowledge Distillation*
 
+The code is ready to release soon.
+
 ## Prerequisites
 
 1. Performance test
