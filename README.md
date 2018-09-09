@@ -23,8 +23,8 @@ Demo codes for the AAAI'19 submission *Private Model Compression via Knowledge D
 
 `teacher_convlarge_cifar.npy` stores the weights of the teacher model pretrained on both the public data and the sensitive data of CIFAR-10.
 
-`teacher_convlarge_public.npy` stores the weights of the teacher model pretrained on the public data of CIFAR-10. It is used to generate adaptive norm bound.
+`teacher_convlarge_public.npy` stores the weights of the teacher model pretrained on the public data of [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html). It is used to generate adaptive norm bound.
 
-`private-compress-cifar.py` is an example of RONA which trains a compact neural network on CIFAR-10.
+`private-compress-cifar.py` is an example of RONA which trains a compact neural network on [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 TFDroid is a demo project on Android system for testing the time overhead of Large-Conv neural network on mobile devices.
