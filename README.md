@@ -31,7 +31,7 @@ TFDroid is a demo project on Android system for testing the time overhead of Lar
 
 ## Experimental Setup on CIFAR-10
 
-We detail the experimental setup on CIFAR-10 here. For brevity, we abbreviate the configuration of the teacher network as: 
+We detail the experimental setup on CIFAR-10 here. For brevity, we abbreviate the configuration of the neural network as: 
 
 - C = Convolution Layer, with the following number indicating the size of the network, i.e. C5 indicates a convolutional layer with a 5 × 5 kernel 
 - S = Stride, i.e. S1 indicates a stride of 1 
@@ -41,5 +41,8 @@ We detail the experimental setup on CIFAR-10 here. For brevity, we abbreviate th
 - AP = Average Pooling Layer, with the following number indicating the subsampling process, i.e. AP6-1 indicates average pooling from 6 × 6 to 1 × 1
 - FC = Fully Connected Layer, with the following number indicating the number of nodes in that layer
 
+The architecture of the teacher model is: \[C3(S1P0)@128-C3(S1P0)@128-C3(S1P0)@128-MP2(S2)\]-\[C3(S1P0)@256-C3(S1P0)@256-C3(S1P0)@256-MP2(S2)\]-\[C3(S1P0)@512-C3(S1P0)@256-C3(S1P0)@128-MP2(S2)\]-AP6-1-FC10
+
+The architecture of the student model is: \[C3(S1P0)@32-C3(S1P0)@32-C3(S1P0)@32-MP2(S2)\]-\[C3(S1P0)@64-C3(S1P0)@64-C3(S1P0)@64-MP2(S2)\]-\[C3(S1P0)@64-C3(S1P0)@32-C3(S1P0)@32-MP2(S2)\]-AP6-1-FC10
 
 
