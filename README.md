@@ -45,7 +45,7 @@ The architecture of the teacher model is: \[C3(S1P0)@128-C3(S1P0)@128-C3(S1P0)@1
 
 The architecture of the student model is: \[C3(S1P0)@32-C3(S1P0)@32-C3(S1P0)@32-MP2(S2)\]-\[C3(S1P0)@64-C3(S1P0)@64-C3(S1P0)@64-MP2(S2)\]-\[C3(S1P0)@64-C3(S1P0)@32-C3(S1P0)@32-MP2(S2)\]-AP6-1-FC10
 
-We choose the 4th layer of the teacher model as the hint layer, the 7th layer of the student model as the guided layer. The temperature parameter $$\tau$$ is set as 3.
+We choose the 4th layer of the teacher model as the hint layer, the 7th layer of the student model as the guided layer. The temperature parameter is set as 3.
 
 The values of other parameters are set as follows: hint_learning_epoch=40, distillation_learning_epoch=8, self_learning_epoch=8, iterations=5, noise_sigma=10, query_select_rate=0.5, self_learning_batchsize=128, hint_distillation_learning_batchsize=512, learning_rate=0.001.  
 
