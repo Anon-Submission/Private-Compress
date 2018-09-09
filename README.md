@@ -21,7 +21,7 @@ Demo codes for the AAAI'19 submission *Private Model Compression via Knowledge D
 
 `student_model.py` and `teacher_model.py` are the network classes of student model and teacher model, respectively.
 
-`teacher_convlarge_cifar.npy` stores the weights of the teacher model pretrained on both the public data and the sensitive data of CIFAR-10.
+`teacher_convlarge_cifar.npy` stores the weights of the teacher model pretrained on both the public data and the sensitive data of [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 `teacher_convlarge_public.npy` stores the weights of the teacher model pretrained on the public data of [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html). It is used to generate adaptive norm bound.
 
