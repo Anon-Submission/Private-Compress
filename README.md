@@ -28,3 +28,18 @@ Demo codes for the AAAI'19 submission *Private Model Compression via Knowledge D
 `private-compress-cifar.py` is an example of RONA which trains a compact neural network on [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html).
 
 TFDroid is a demo project on Android system for testing the time overhead of Large-Conv neural network on mobile devices.
+
+## Experimental Setup on CIFAR-10
+
+We detail the experimental setup on CIFAR-10 here. For brevity, we abbreviate the configuration of the teacher network as: 
+
+- C = Convolution Layer, with the following number indicating the size of the network, i.e. C5 indicates a convolutional layer with a 5 × 5 kernel 
+- S = Stride, i.e. S1 indicates a stride of 1 
+- P = Padding, i.e. P0 indicates a padding of zero 
+- @ = Number of kernels in Convolution Layer, i.e. @20 indicates 20 kernels in that layer 
+- MP = Max Pooling Layer, with the following number indicating the subsampling window, i.e. MP2 indicates max pooling of 2 × 2 windows 
+- AP = Average Pooling Layer, with the following number indicating the subsampling process, i.e. AP6-1 indicates average pooling from 6 × 6 to 1 × 1
+- FC = Fully Connected Layer, with the following number indicating the number of nodes in that layer
+
+
+
